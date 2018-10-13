@@ -7,11 +7,11 @@
   "license": "MIT",
   "scripts": {
     "lint.eslint": "eslint .",
-    "lint.prettier": "prettier --list-different **/*.{mjs,js}",
+    "lint.prettier": "prettier --list-different \"**/*.js\"",
     "lint": "npm run lint.eslint && npm run lint.prettier",
     "jest": "jest ./tests",
     "test": "npm run lint && npm run jest",
-    "format": "prettier --write **/*.{mjs,js}",
+    "format": "prettier --write \"**/*.js\"",
     "precommit": "lint-staged",
     "commit": "git-cz",
     "deploy": "semantic-release"

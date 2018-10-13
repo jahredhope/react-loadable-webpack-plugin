@@ -3,5 +3,12 @@ node_js:
   - "node"
 cache: yarn
 
-script:
-  - "npm run deploy"
+jobs:
+  include:
+    - stage: release
+      if: branch = master
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - yarn deploy

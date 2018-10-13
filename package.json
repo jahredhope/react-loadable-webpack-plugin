@@ -5,6 +5,14 @@
   "main": "index.js",
   "version": "0.0.0-development",
   "license": "MIT",
+  "keywords": [
+    "react-loadable",
+    "webpack",
+    "plugin",
+    "memory",
+    "memory-fs",
+    "outputFileSystem"
+  ],
   "scripts": {
     "lint.eslint": "eslint .",
     "lint.prettier": "prettier --list-different \"**/*.js\"",
@@ -41,5 +49,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
